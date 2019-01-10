@@ -25,5 +25,10 @@ class MainActivity : AppCompatActivity() {
         val user = User("eldianto","antoeldi@gmail.com","jalan slamet riyadi gg Damai no 8")
         viewModel.setData(user)
 
+        //viewModel.testButton()
+
+
     }
+
+
 }
