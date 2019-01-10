@@ -1,6 +1,7 @@
 package id.onestep.androidmvvm.views
 
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -25,6 +26,16 @@ class MainActivity : AppCompatActivity() {
         val user = User("eldianto","antoeldi@gmail.com","jalan slamet riyadi gg Damai no 8")
         viewModel.setData(user)
 
+        val intent=Intent(this,SecondActivity::class.java)
+
+
+        binding.testID.setOnClickListener{
+            binding.testID.setText("clicked")
+        }
+
+        binding.btnNext.setOnClickListener{
+            startActivity(intent)
+        }
         //viewModel.testButton()
 
 
